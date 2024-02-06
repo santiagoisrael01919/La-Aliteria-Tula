@@ -1,0 +1,130 @@
+@media (max-width:768px){
+    .columns{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media (max-width:480px){
+    .columns{
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+  }
+
+
+
+  
+  .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+    list-style-type: none;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #323232;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover{
+    color: #02b1f4;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    color:#02b1f4;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+#menu{
+    display: none;
+
+}
+
+.menu.icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+html{
+    font-family: system-ui;
+  }
+  
+  .wrap{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .column-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+  }
+  
+  .menu-restaurante{
+    color: #fff;  
+    text-align: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+    display: flex;
+    flex-flow: column;
+  }
+  
+  hr{
+    background: #FFC300;
+    height: 2.5px;
+    width: 50px;
+    border: none;
+  }
+  
+  .precio-menu{
+    font-weight: bold;
+  }
+  
+  .precio-menu span{
+    font-size: 2rem;
+    color: #FFC300;
+  }
